@@ -17,4 +17,4 @@ $mustang->color = "Yellow";
 $mustang->engine = 300;
 
 
-var_dump($mustang);
+echo $mustang->getEngine("horsepower");

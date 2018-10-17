@@ -18,5 +18,11 @@ class Car {
     public $brand;
     public $color;
     public $engine;
+ 
+    // Metodos
+    public function getEngine($type = "horsepower")
+    {
+        return "{$this->engine} {$type}";
+    }
     
 }
