@@ -1,10 +1,7 @@
 <?php
 
-/*
- * 01 - Criar um único arquivo para a classe específica. 
- * 02 - Criar o arquivo com a primeira letra maiúscula e de preferência com o nome da classe em questão.
- * 03 - Classe sempre no singular, nunca no plural.
- */
+    require_once ("Vehicle.php");
+
 
 /**
  * Description of Car
@@ -12,17 +9,8 @@
  * @author Fernando Britto
  */
 
-class Car {
-    
-    // Atributos
-    public $brand;
-    public $color;
-    public $engine;
- 
-    // Metodos
-    public function getEngine($type = "horsepower")
-    {
-        return "{$this->engine} {$type}";
-    }
-    
+    // Herança
+class Car extends Vehicle 
+{
+    public $doors;
 }
