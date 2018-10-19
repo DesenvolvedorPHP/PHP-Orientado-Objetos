@@ -31,6 +31,6 @@ $m->engine = 150;
 
 
 //echo $mustang->getEngine("horsepower");
-echo $mustang->getDoors();
-//echo $ferrari->brand;
+//echo $mustang->getDoors();
+echo $ferrari->getBrand();
 //echo $m->color;

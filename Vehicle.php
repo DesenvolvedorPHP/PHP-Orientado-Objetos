@@ -5,17 +5,23 @@
  * 03 - Classe sempre no singular, nunca no plural.
  */
 
+require_once ("IVehicle.php");
 
 /**
  * Description of Vehicle
  *
  * @author Fernando Britto
  */
-class Vehicle {
+
+// Abstract Class
+abstract class Vehicle implements IVehicle {
      // Atributos
     public $brand;
     public $color;
     public $engine;
+    
+    // Protected
+    //protected $engine;
     
     
     
@@ -33,4 +39,15 @@ class Vehicle {
     {
         return "{$this->engine} {$type}";
     }
+    
+    public function getColor(){
+        return $this->color;
+    }
+
+    
+
+    // Metodos Abstract
+    abstract public function getBrand();
+    
+    
 }
