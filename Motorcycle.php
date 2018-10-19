@@ -9,5 +9,9 @@
  */
 class Motorcycle extends Vehicle
 {
-    
+   
+    // Calling parent
+    public function __construct($brand = null ,$color = null) {
+        parent::__construct($brand, strtoupper($color));
+    }
 }

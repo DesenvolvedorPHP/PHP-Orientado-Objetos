@@ -12,5 +12,14 @@
     // Herança
 class Car extends Vehicle 
 {
-    public $doors;
+    //Atributos Private e Public
+    private $doors;
+    
+    public function setDoors($doors){
+        $this->doors = $doors;
+    }
+    
+    public function getDoors(){
+        return $this->doors;
+    }
 }

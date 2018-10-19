@@ -16,7 +16,18 @@ class Vehicle {
     public $brand;
     public $color;
     public $engine;
- 
+    
+    
+    
+    // Metodo Construtor
+    public function __construct($brand = null ,$color = null) {
+        $this->brand = $brand;
+        $this->color = $color;
+    }
+
+
+    
+    
     // Metodos
     public function getEngine($type = "horsepower")
     {
