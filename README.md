@@ -1,5 +1,5 @@
 # PHP-Orientado-Objetos
-PHP Orientado à Objetos
+Orientação à Objetos
 
 
  **Estudo do paradigma da programação orienta à objeto.**
