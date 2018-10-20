@@ -1,8 +1,12 @@
 <?php
 
-require __DIR__.'/src/Person.php';
+require __DIR__.'/src/people/Person.php';
 
 
-$name = (new Person)->setName('Fernando');
+$person = new InfoEnter\People\Person;
+$person->setName('Fernando');
+$person->setAge('34');
+$person->setWeight(70);
 
-var_dump($name);
+
+var_dump($person);
