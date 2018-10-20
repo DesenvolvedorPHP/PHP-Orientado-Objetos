@@ -7,7 +7,19 @@ class Person {
     
     private $data = [];
     
-    public function setName($name)
+    // Metodos interceptadores
+    public function __construct() 
+    {
+        echo 'Classe Instanciada' . PHP_EOL;
+    }
+    
+//    public function __call($method, $proprieties) {
+//        var_dump($method, $proprieties);
+//    }
+    
+       
+    
+        public function setName($name)
     {
         $this->data[] = $name;
     }
@@ -20,5 +32,6 @@ class Person {
     public function setWeight(float $weight)
     {
         $this->data[] = $weight;
-    }
+    }    
+    
 }
